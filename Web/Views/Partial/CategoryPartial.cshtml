@@ -1,0 +1,9 @@
+﻿@{ 
+    if (ViewBag.Categories != null)
+    {
+        foreach (var item in (List<Model.Categories>)ViewBag.Categories)
+        {
+            <li>@Html.ActionLink(item.Name, "Category", new { Id = item.Id })</li>
+        }
+    }
+}

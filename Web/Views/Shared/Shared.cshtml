@@ -1,0 +1,30 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+    <link href="~/Content/css/main.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="wrapper">
+        <div class="container">
+            <h1>Yiğit's Bazaar</h1>
+            <ul class="grid-nav">
+                @Html.Partial("~/Views/Partial/CategoryPartial.cshtml")
+            </ul>
+            <hr />
+            <div>
+                <ul class="rig columns-4">
+                    @RenderBody()
+                </ul>
+            </div>
+            <hr />
+        </div>
+    </div>
+</body>
+</html>

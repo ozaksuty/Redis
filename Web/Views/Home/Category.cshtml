@@ -1,0 +1,24 @@
+﻿
+@{
+    ViewBag.Title = "Category";
+    Layout = "~/Views/Shared/Shared.cshtml";
+}
+
+@model IEnumerable<Model.Products>
+@{Layout = "~/Views/Shared/Shared.cshtml";}
+@{
+    if (Model != null)
+    {
+        foreach (var item in Model)
+        {
+            <li>
+                <img src="/Content/images/@item.ImagePath" />
+                <h3>@item.Name</h3>
+                <p>
+                    Price : @item.Price.ToString("C")
+                </p>
+                <button class="styled-button">add to card</button>
+            </li>
+        }
+    }
+}

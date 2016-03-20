@@ -1,0 +1,10 @@
+C:\Users\YIGIDO-MONSTER\Documents\Visual Studio 2015\Projects\Redis-Sample\Data\bin\Debug\Data.dll
+C:\Users\YIGIDO-MONSTER\Documents\Visual Studio 2015\Projects\Redis-Sample\Data\bin\Debug\Data.pdb
+C:\Users\YIGIDO-MONSTER\Documents\Visual Studio 2015\Projects\Redis-Sample\Data\bin\Debug\Newtonsoft.Json.dll
+C:\Users\YIGIDO-MONSTER\Documents\Visual Studio 2015\Projects\Redis-Sample\Data\bin\Debug\StackExchange.Redis.dll
+C:\Users\YIGIDO-MONSTER\Documents\Visual Studio 2015\Projects\Redis-Sample\Data\bin\Debug\Newtonsoft.Json.xml
+C:\Users\YIGIDO-MONSTER\Documents\Visual Studio 2015\Projects\Redis-Sample\Data\bin\Debug\StackExchange.Redis.pdb
+C:\Users\YIGIDO-MONSTER\Documents\Visual Studio 2015\Projects\Redis-Sample\Data\bin\Debug\StackExchange.Redis.xml
+C:\Users\YIGIDO-MONSTER\Documents\Visual Studio 2015\Projects\Redis-Sample\Data\obj\Debug\Data.csprojResolveAssemblyReference.cache
+C:\Users\YIGIDO-MONSTER\Documents\Visual Studio 2015\Projects\Redis-Sample\Data\obj\Debug\Data.dll
+C:\Users\YIGIDO-MONSTER\Documents\Visual Studio 2015\Projects\Redis-Sample\Data\obj\Debug\Data.pdb

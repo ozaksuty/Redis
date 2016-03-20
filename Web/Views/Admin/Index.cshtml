@@ -1,0 +1,69 @@
+﻿@{
+    Layout = null;
+}
+<!DOCTYPE html>
+<style>
+    div {
+        margin-top: 10px;
+    }
+</style>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+</head>
+<body>
+    <input type="button" value="Add a Category" onclick="AddCategory()" />
+    <input type="button" value="Add a Product" onclick="AddProduct()" />
+
+    <div id="addCategory">
+        @using (Html.BeginForm("AddCategory", "Admin", FormMethod.Post))
+        {
+            <input type="text" name="Id" id="Id" placeholder="Category Id" /><br />
+            <input type="text" name="Name" id="Name" placeholder="Category Name" /><br />
+            <input type="submit" value="Submit" />
+        }
+    </div>
+    <div id="addProduct">
+        @using (Html.BeginForm("AddProduct", "Admin", FormMethod.Post))
+        {
+            <input type="text" name="Id" id="Id" placeholder="Product Id" /><br />
+            <input type="text" name="Name" id="Name" placeholder="Product Name" /><br />
+            <input type="text" name="Price" id="Price" placeholder="Product Price" /><br />
+            <input type="file" name="ImagePath" id="ImagePath" placeholder="Product Image" /><br />
+            <select name="CategoryId" id="CategoryId">
+                @{
+                    if (ViewBag.Categories != null)
+                    {
+                        foreach (var item in (List<Model.Categories>)ViewBag.Categories)
+                        {
+                            <option value="@item.Id">@item.Name</option>
+                        }
+                    }
+                    else
+                    {
+                        <option value="0">Please add a category</option>
+                    }
+                }
+            </select>
+            <input type="submit" value="Submit" />
+        }
+    </div>
+    <script type="text/javascript">
+        hideDivs();
+        function AddCategory() {
+            hideDivs();
+            document.getElementById('addCategory').style.display = 'block';
+        }
+        function AddProduct() {
+            hideDivs();
+            document.getElementById('addProduct').style.display = 'block';
+        }
+        function hideDivs() {
+            var divs = document.getElementsByTagName('div');
+            for (var i = 0; i < divs.length; i++)
+                divs[i].style.display = "none";
+        }
+    </script>
+</body>
+</html>
